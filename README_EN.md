@@ -1,5 +1,5 @@
 [简体中文](README.md) · **English**
-![Awesome Embodied Trustworthy Execution banner](assets/banner.svg) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![38 papers](https://img.shields.io/badge/Papers-38-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-27](https://img.shields.io/badge/Updated-2026--08--27-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
+![Awesome Embodied Trustworthy Execution banner](assets/banner.svg) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![43 papers](https://img.shields.io/badge/Papers-43-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-29](https://img.shields.io/badge/Updated-2026--08--29-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
 
 **A curated research map for security, reliability, and decision assurance in embodied AI.**
 
@@ -71,6 +71,8 @@ Unlike conventional digital AI, an embodied model operates inside a **perception
 | P01 | [Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses](https://arxiv.org/abs/2605.02900)                         | Survey               |
 | P02 | [Safe Embodied AI for Long-horizon Tasks: A Cross-layer Analysis of Robotic Manipulation](https://arxiv.org/abs/2606.05660) | Survey / framework   |
 | P03 | [What Breaks Embodied AI Security: LLM Vulnerabilities, CPS Flaws, or Something Else?](https://arxiv.org/abs/2602.17345)    | Survey / system view |
+| P39 | [Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation](https://arxiv.org/abs/2607.28226) | Lifecycle security survey |
+| P43 | [Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation](https://arxiv.org/abs/2608.16843) | Trust-boundary survey |
 
 ### I. Malicious attacks and defense
 
@@ -91,6 +93,9 @@ Unlike conventional digital AI, an embodied model operates inside a **perception
 | P17 | [Hijacking Robots with a Piece of Paper: A Systematic Study of Physical Prompt Injection in VLM-Controlled Robots](https://arxiv.org/abs/2608.05715)  | Physical prompt injection |
 | P18 | [ANNIE: Be Careful of Your Robots](https://arxiv.org/abs/2509.03383)                                                                                  | Benchmark + attack        |
 | P19 | [RedVLA: Physical Red Teaming for Vision-Language-Action Models](https://arxiv.org/abs/2604.22591)                                                    | Red team + guard          |
+| P40 | [VLAGuard: A Framework for Evaluating and Mitigating Physical Attention Hijacking in Vision-Language-Action Robots within Wireless Sensor Networks](https://arxiv.org/abs/2608.01028) | Attack + defense |
+| P41 | [Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models](https://arxiv.org/abs/2608.10393)               | Physical attack           |
+| P42 | [Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability](https://arxiv.org/abs/2608.15475)          | Weight-integrity attack   |
 
 ### II. Software and hardware errors and robustness
 

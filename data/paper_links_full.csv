@@ -37,6 +37,11 @@
 36,LabGuard: Grounding Natural-Language Laboratory Rules into Runtime Guards for Embodied Laboratory Agents,2606.31045,03_黑盒决策异常与保障,规则驱动运行时守卫,https://arxiv.org/abs/2606.31045,https://arxiv.org/pdf/2606.31045.pdf
 37,Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts,2605.22446,03_黑盒决策异常与保障,执行前验证重采样,https://arxiv.org/abs/2605.22446,https://arxiv.org/pdf/2605.22446.pdf
 38,Don't Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered,2510.08464,02_软硬件误差处理,剪枝误差与恢复,https://arxiv.org/abs/2510.08464,https://arxiv.org/pdf/2510.08464.pdf
+39,"Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation",2607.28226,00_总览框架,世界模型生命周期安全,https://arxiv.org/abs/2607.28226,https://arxiv.org/pdf/2607.28226.pdf
+40,VLAGuard: A Framework for Evaluating and Mitigating Physical Attention Hijacking in Vision-Language-Action Robots within Wireless Sensor Networks,2608.01028,01_恶意攻击防御,物理注意力劫持与防御,https://arxiv.org/abs/2608.01028,https://arxiv.org/pdf/2608.01028.pdf
+41,Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models,2608.10393,01_恶意攻击防御,自然外观物理补丁攻击,https://arxiv.org/abs/2608.10393,https://arxiv.org/pdf/2608.10393.pdf
+42,Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability,2608.15475,01_恶意攻击防御,权重位翻转攻击,https://arxiv.org/abs/2608.15475,https://arxiv.org/pdf/2608.15475.pdf
+43,"Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation",2608.16843,00_总览框架,信任边界安全综述,https://arxiv.org/abs/2608.16843,https://arxiv.org/pdf/2608.16843.pdf
 S01,Uncovering Vulnerability of Vision-Language-Action Models under Joint-Level Physical Faults,2606.10501,02_软硬件误差处理,关节执行器物理故障,https://arxiv.org/abs/2606.10501,https://arxiv.org/pdf/2606.10501.pdf
 S02,Health-Conditioned Vision-Language-Action Models for Malfunction-Aware Robot Control,2605.16056,02_软硬件误差处理,关节退化与故障适应,https://arxiv.org/abs/2605.16056,https://arxiv.org/pdf/2605.16056.pdf
 S03,Quantization-Aware Imitation-Learning for Resource-Efficient Robotic Control,2412.01034,02_软硬件误差处理,低比特量化误差,https://arxiv.org/abs/2412.01034,https://arxiv.org/pdf/2412.01034.pdf
