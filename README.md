@@ -167,6 +167,10 @@
 
 `World Model` `Lifecycle` `Security`   **Lifecycle Security Survey**
 
+![Representative figure for P39](assets/figures/39_security-of-world-model-based-embodied-ai-lifecycle-security.png)
+
+*图源：Fazhong Liu et al., Fig. 1（裁剪自[原论文](https://arxiv.org/abs/2607.28226)），[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。*
+
 **🎯 问题**
 世界模型既承担状态压缩、未来预测与规划，又可能把数据、传感、提示或反馈中的破坏沿闭环传播到真实动作；仅按单个攻击机制分类难以描述这种生命周期风险。
 
@@ -181,6 +185,10 @@
 ### P43 · Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation
 
 `Embodied Agent` `Trust Boundary` `Security`   **Trust-Boundary Survey**
+
+![Representative figure for P43](assets/figures/43_security-of-foundation-model-powered-embodied-agents.png)
+
+*图源：Jiawei Liu et al., Fig. 1（裁剪自[原论文](https://arxiv.org/abs/2608.16843)），[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。*
 
 **🎯 问题**
 按 jailbreak、prompt injection 或 adversarial example 等机制组织攻击，往往无法说明攻击者最先突破了具身闭环中的哪条信任边界，也难以定位跨层传播路径。
@@ -487,6 +495,10 @@ DURA 在预训练扩散模型的潜在轨迹上优化自然外观补丁，使机
 ### P42 · Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability
 
 `VLA` `Bit Flip` `Weight Integrity`   **Weight-Integrity Attack**
+
+![Representative figure for P42](assets/figures/42_bit-flip-attacks-on-vision-language-action-models.png)
+
+*图源：Yudong Gao et al., Fig. 1（裁剪自[原论文](https://arxiv.org/abs/2608.15475)），[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。*
 
 **🎯 问题**
 量化 VLA 的 INT8 权重可能遭受 Rowhammer 风格的定向位翻转，而动作解码头的架构会显著影响少量权重破坏在闭环中的失效程度。
