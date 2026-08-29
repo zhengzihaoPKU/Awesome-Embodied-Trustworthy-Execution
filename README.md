@@ -1,7 +1,7 @@
 **简体中文** · [English](README_EN.md)
 
 ![Awesome Embodied Trustworthy Execution banner](assets/banner.svg)
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![38 papers](https://img.shields.io/badge/Papers-38-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-27](https://img.shields.io/badge/Updated-2026--08--27-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![43 papers](https://img.shields.io/badge/Papers-43-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-29](https://img.shields.io/badge/Updated-2026--08--29-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
 
 **A curated research map for security, reliability, and decision assurance in embodied AI.**
 
@@ -58,7 +58,7 @@
 
 ## 🗺️ Research Landscape
 
-### Open the 38-paper landscape table
+### Open the 43-paper landscape table
 
 |  ID | Paper                                                                                                                                              | Layer            | Role / intervention        |
 | --: | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |
@@ -100,6 +100,11 @@
 | P36 | [LabGuard: Grounding Natural-Language Laboratory Rules into Runtime Guards for Embodied Laboratory Agents](https://arxiv.org/abs/2606.31045)          | 🧠 Assurance     | Runtime Guard              |
 | P37 | [Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts](https://arxiv.org/abs/2605.22446)             | 🧠 Assurance     | Pre-execution Verification |
 | P38 | [Don&#39;t Run with Scissors: Pruning Breaks VLA Models but They Can Be Recovered](https://arxiv.org/abs/2510.08464)                                  | ⚙️ Reliability | Compression Reliability    |
+| P39 | [Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation](https://arxiv.org/abs/2607.28226)                       | 🧭 Framework     | Lifecycle Security Survey  |
+| P40 | [VLAGuard: A Framework for Evaluating and Mitigating Physical Attention Hijacking in Vision-Language-Action Robots within Wireless Sensor Networks](https://arxiv.org/abs/2608.01028) | 🛡️ Security | Attack + Defense |
+| P41 | [Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models](https://arxiv.org/abs/2608.10393)               | 🛡️ Security    | Physical Attack            |
+| P42 | [Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability](https://arxiv.org/abs/2608.15475)          | 🛡️ Security    | Weight-Integrity Attack    |
+| P43 | [Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation](https://arxiv.org/abs/2608.16843)          | 🧭 Framework     | Trust-Boundary Survey      |
 
 ---
 
@@ -157,6 +162,36 @@
 把具身安全从“组件是否正确”提升到“跨层系统是否可信”，是三层分类的理论基础。
 
 [Paper](https://arxiv.org/abs/2602.17345) · [PDF](https://arxiv.org/pdf/2602.17345.pdf)   `arXiv:2602.17345`
+
+### P39 · Security of World-Model-Based Embodied AI: A Lifecycle of Threats, Defenses, and Evaluation
+
+`World Model` `Lifecycle` `Security`   **Lifecycle Security Survey**
+
+**🎯 问题**
+世界模型既承担状态压缩、未来预测与规划，又可能把数据、传感、提示或反馈中的破坏沿闭环传播到真实动作；仅按单个攻击机制分类难以描述这种生命周期风险。
+
+**💡 核心思路**
+沿数据构建与表征学习、状态落地与想象、轨迹评估与执行、记忆和工具驱动的长期适应梳理威胁，并把 provenance、鲁棒 grounding、uncertainty-aware prediction、trajectory gating 与 feedback auditing 等防御对应到各阶段。
+
+**🔎 为什么重要**
+把世界模型从孤立预测组件提升为具身系统的安全边界，便于分析攻击如何跨阶段传播，以及保障机制应部署在何处。
+
+[Paper](https://arxiv.org/abs/2607.28226) · [PDF](https://arxiv.org/pdf/2607.28226.pdf)   `arXiv:2607.28226`
+
+### P43 · Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation
+
+`Embodied Agent` `Trust Boundary` `Security`   **Trust-Boundary Survey**
+
+**🎯 问题**
+按 jailbreak、prompt injection 或 adversarial example 等机制组织攻击，往往无法说明攻击者最先突破了具身闭环中的哪条信任边界，也难以定位跨层传播路径。
+
+**💡 核心思路**
+采用 first-compromised-trust-boundary 原则，将系统组织为五层十二类攻击面，并基于 58 条攻击记录和 61 条防御记录分析攻击传播、防御位置与评测实践。
+
+**🔎 为什么重要**
+这种边界优先的视角有助于把防御放到正确接口，同时揭示 context / memory、middleware、world-state integrity 与 multi-agent trust 等研究缺口。
+
+[Paper](https://arxiv.org/abs/2608.16843) · [PDF](https://arxiv.org/pdf/2608.16843.pdf)   `arXiv:2608.16843`
 
 ---
 
@@ -418,6 +453,51 @@ VLA 的离散动作 token 可能继承语言模型的 adversarial suffix / jailb
 把具身红队从“随机放危险物”升级成 trajectory-guided risk amplification。
 
 [Paper](https://arxiv.org/abs/2604.22591) · [PDF](https://arxiv.org/pdf/2604.22591.pdf)   `arXiv:2604.22591`
+
+### P40 · VLAGuard: A Framework for Evaluating and Mitigating Physical Attention Hijacking in Vision-Language-Action Robots within Wireless Sensor Networks
+
+`VLA` `Physical Patch` `Attention Defense`   **Attack + Defense**
+
+**🎯 问题**
+可打印物理补丁能够劫持 VLA 的 action-conditioned cross-attention，使机器人在真实闭环中忽略与任务相关的视觉区域并产生危险动作。
+
+**💡 核心思路**
+先以 VASA 根据 visuomotor attention 构造语义补丁进行压力测试，再用 APFT 稳定时空注意力并约束几何一致性，在不增加推理开销的情况下提升攻击下的鲁棒性。
+
+**🔎 为什么重要**
+工作把 attention-pathway vulnerability 与仿真和实体机器人的物理后果直接关联，并给出与该攻击面对应的训练期防御。
+
+[Paper](https://arxiv.org/abs/2608.01028) · [PDF](https://arxiv.org/pdf/2608.01028.pdf)   `arXiv:2608.01028`
+
+### P41 · Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models
+
+`VLA` `Diffusion` `Physical Patch`   **Physical Attack**
+
+**🎯 问题**
+传统 VLA 对抗攻击常依赖像素级扰动或白盒梯度，生成物明显且现实部署条件受限，难以代表自然外观攻击物进入机器人视野时的风险。
+
+**💡 核心思路**
+DURA 在预训练扩散模型的潜在轨迹上优化自然外观补丁，使机器人趋向攻击者指定动作；方法同时支持白盒设置和只读取预测动作的黑盒设置，并在仿真与实体系统中评测。
+
+**🔎 为什么重要**
+它把 VLA 物理攻击从易察觉的像素扰动推进到更具现实可实现性的 unrestricted patch，扩大了闭环红队评测应覆盖的威胁范围。
+
+[Paper](https://arxiv.org/abs/2608.10393) · [PDF](https://arxiv.org/pdf/2608.10393.pdf)   `arXiv:2608.10393`
+
+### P42 · Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability
+
+`VLA` `Bit Flip` `Weight Integrity`   **Weight-Integrity Attack**
+
+**🎯 问题**
+量化 VLA 的 INT8 权重可能遭受 Rowhammer 风格的定向位翻转，而动作解码头的架构会显著影响少量权重破坏在闭环中的失效程度。
+
+**💡 核心思路**
+用梯度选择高影响位并设计 manifold-escape 目标，跨三类 action head 比较攻击预算，同时评估只保护少量关键权重的选择性防护方案。
+
+**🔎 为什么重要**
+结果将模型权重完整性明确为具身基础模型的安全边界，并表明位翻转防护需要针对动作生成架构，而不能只依据随机故障测试。
+
+[Paper](https://arxiv.org/abs/2608.15475) · [PDF](https://arxiv.org/pdf/2608.15475.pdf)   `arXiv:2608.15475`
 
 ---
 
@@ -775,7 +855,7 @@ SafeContract 只观察 action output，计算 reversal、jerk、momentum coheren
 
 ## 🚧 Open Research Gaps
 
-从目前 38 篇工作的分布可以看到，**攻击安全与模型决策保障已经形成较密集的研究群，而“软硬件运行误差 → 闭环可信退化 → 在线恢复”仍明显不足。** 特别值得继续补充：
+从目前 43 篇工作的分布可以看到，**攻击安全与模型决策保障已经形成较密集的研究群，而“软硬件运行误差 → 闭环可信退化 → 在线恢复”仍明显不足。** 特别值得继续补充：
 
 1. **Hardware fault → embodied behavior propagation**：GPU / NPU soft error、memory bit flip、传感器异常、关节/执行器退化如何跨层传播到最终动作与物理后果。
 2. **Approximate computing under closed loop**：quantization、pruning、cache、early-exit、speculative execution 等优化不应只看离线精度，而应评价长时程误差累积与恢复。
