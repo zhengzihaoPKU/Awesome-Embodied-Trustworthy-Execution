@@ -42,6 +42,11 @@
 41,Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models,2608.10393,01_恶意攻击防御,自然外观物理补丁攻击,https://arxiv.org/abs/2608.10393,https://arxiv.org/pdf/2608.10393.pdf
 42,Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability,2608.15475,01_恶意攻击防御,权重位翻转攻击,https://arxiv.org/abs/2608.15475,https://arxiv.org/pdf/2608.15475.pdf
 43,"Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation",2608.16843,00_总览框架,信任边界安全综述,https://arxiv.org/abs/2608.16843,https://arxiv.org/pdf/2608.16843.pdf
+44,FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation,2608.26645,03_黑盒决策异常与保障,自主纠错与恢复,https://arxiv.org/abs/2608.26645,https://arxiv.org/pdf/2608.26645.pdf
+45,TrapVLA: Trapping Vision-Language-Action Models in Configured Failure Modes,2608.26578,01_恶意攻击防御,可配置失败后门,https://arxiv.org/abs/2608.26578,https://arxiv.org/pdf/2608.26578.pdf
+46,Arrive and Survive: Scaling Safe Goal-Conditioned Policy Learning from One-Bit Failure Signals,2608.26571,03_黑盒决策异常与保障,失败终止下的安全策略学习,https://arxiv.org/abs/2608.26571,https://arxiv.org/pdf/2608.26571.pdf
+47,Barrier Function Conformal Safety Clearance Certification with CVaR for Driving Trajectory Selection,2608.26533,03_黑盒决策异常与保障,轨迹安全间距证书,https://arxiv.org/abs/2608.26533,https://arxiv.org/pdf/2608.26533.pdf
+48,Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving,2608.26074,03_黑盒决策异常与保障,承诺前意图分歧门控,https://arxiv.org/abs/2608.26074,https://arxiv.org/pdf/2608.26074.pdf
 S01,Uncovering Vulnerability of Vision-Language-Action Models under Joint-Level Physical Faults,2606.10501,02_软硬件误差处理,关节执行器物理故障,https://arxiv.org/abs/2606.10501,https://arxiv.org/pdf/2606.10501.pdf
 S02,Health-Conditioned Vision-Language-Action Models for Malfunction-Aware Robot Control,2605.16056,02_软硬件误差处理,关节退化与故障适应,https://arxiv.org/abs/2605.16056,https://arxiv.org/pdf/2605.16056.pdf
 S03,Quantization-Aware Imitation-Learning for Resource-Efficient Robotic Control,2412.01034,02_软硬件误差处理,低比特量化误差,https://arxiv.org/abs/2412.01034,https://arxiv.org/pdf/2412.01034.pdf

@@ -1,7 +1,7 @@
 **简体中文** · [English](README_EN.md)
 
 ![Awesome Embodied Trustworthy Execution banner](assets/banner.svg)
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![43 papers](https://img.shields.io/badge/Papers-43-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-29](https://img.shields.io/badge/Updated-2026--08--29-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![48 papers](https://img.shields.io/badge/Papers-48-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-30](https://img.shields.io/badge/Updated-2026--08--30-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
 
 **A curated research map for security, reliability, and decision assurance in embodied AI.**
 
@@ -58,7 +58,7 @@
 
 ## 🗺️ Research Landscape
 
-### Open the 43-paper landscape table
+### Open the 48-paper landscape table
 
 |  ID | Paper                                                                                                                                              | Layer            | Role / intervention        |
 | --: | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- | -------------------------- |
@@ -105,6 +105,11 @@
 | P41 | [Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models](https://arxiv.org/abs/2608.10393)               | 🛡️ Security    | Physical Attack            |
 | P42 | [Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability](https://arxiv.org/abs/2608.15475)          | 🛡️ Security    | Weight-Integrity Attack    |
 | P43 | [Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation](https://arxiv.org/abs/2608.16843)          | 🧭 Framework     | Trust-Boundary Survey      |
+| P44 | [FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation](https://arxiv.org/abs/2608.26645)  | 🧠 Assurance     | Runtime Recovery           |
+| P45 | [TrapVLA: Trapping Vision-Language-Action Models in Configured Failure Modes](https://arxiv.org/abs/2608.26578)                                      | 🛡️ Security      | Backdoor Attack             |
+| P46 | [Arrive and Survive: Scaling Safe Goal-Conditioned Policy Learning from One-Bit Failure Signals](https://arxiv.org/abs/2608.26571)                    | 🧠 Assurance     | Training-time Safe RL      |
+| P47 | [Barrier Function Conformal Safety Clearance Certification with CVaR for Driving Trajectory Selection](https://arxiv.org/abs/2608.26533)             | 🧠 Assurance     | Safety Certification       |
+| P48 | [Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving](https://arxiv.org/abs/2608.26074) | 🧠 Assurance | Pre-commitment Gating |
 
 ---
 
@@ -511,6 +516,25 @@ DURA 在预训练扩散模型的潜在轨迹上优化自然外观补丁，使机
 
 [Paper](https://arxiv.org/abs/2608.15475) · [PDF](https://arxiv.org/pdf/2608.15475.pdf)   `arXiv:2608.15475`
 
+### P45 · TrapVLA: Trapping Vision-Language-Action Models in Configured Failure Modes
+
+`VLA` `Backdoor` `Configured Failure`   **Backdoor Attack**
+
+![Representative figure for P45](assets/figures/45_trapvla-configured-failure-trapping.png)
+
+*图源：Jun-Hui Liu et al., Fig. 1（裁剪自[原论文](https://arxiv.org/abs/2608.26578)），[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。*
+
+**🎯 问题**
+已有 VLA 后门工作通常把任意任务失败都计为攻击成功，无法刻画攻击者是否能隐蔽地控制机器人以指定方式失败。
+
+**💡 核心思路**
+构建目标轨迹数据引擎与 Trap-LIBERO、Trap-RoboTwin 基准，并通过学习文本触发器诱导的稀疏动作残差，把正常轨迹导向四类预设失败模式。
+
+**🔎 为什么重要**
+它把后门威胁从“让任务失败”推进到“控制失败形态”，且在仿真和实体设置中保持干净数据性能，说明看似自然的闭环失效也可能来自定向操纵。
+
+[Paper](https://arxiv.org/abs/2608.26578) · [PDF](https://arxiv.org/pdf/2608.26578.pdf)   `arXiv:2608.26578`
+
 ---
 
 ## ⚙️ II. Software and Hardware Errors and Robustness
@@ -863,11 +887,75 @@ SafeContract 只观察 action output，计算 reversal、jerk、momentum coheren
 
 [Paper](https://arxiv.org/abs/2605.22446) · [PDF](https://arxiv.org/pdf/2605.22446.pdf)   `arXiv:2605.22446`
 
+### P44 · FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation
+
+`VLA` `Failure Monitoring` `Recovery`   **Runtime Recovery**
+
+**🎯 问题**
+由无故障示范训练的 VLA 在漏抓、物体掉落或意外碰撞后往往无法回到有效任务状态，单纯继续执行会把局部偏差放大为长时程失败。
+
+**💡 核心思路**
+FLARE 用扰动与 bridging segments 训练可处理一般偏差的 Retry 能力，再由离线 MLLM 分析执行视频、收集少量对象中心 Reset 技能，并让在线 MLLM monitor 在任务策略与 Reset 之间仲裁。
+
+**🔎 为什么重要**
+它区分可直接纠正的执行偏差与破坏任务状态的 OOD 故障，把检测、状态恢复和继续执行组织成统一的接触式操作闭环。
+
+[Paper](https://arxiv.org/abs/2608.26645) · [PDF](https://arxiv.org/pdf/2608.26645.pdf)   `arXiv:2608.26645`
+
+### P46 · Arrive and Survive: Scaling Safe Goal-Conditioned Policy Learning from One-Bit Failure Signals
+
+`Safe RL` `Failure Termination` `Goal-conditioned Policy`   **Training-time Safe RL**
+
+![Representative figure for P46](assets/figures/46_arrive-and-survive-safe-crl.png)
+
+*图源：Guopeng Li et al., Fig. 1（裁剪自[原论文](https://arxiv.org/abs/2608.26571)），[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)。*
+
+**🎯 问题**
+在失败即终止的任务中，传统 contrastive RL 忽略终止所移除的未来概率质量，会高估临近失败轨迹的到达价值并反向强化不安全动作。
+
+**💡 核心思路**
+Safe-CRL 以 mass-weighted InfoNCE 修正短存活未来在 critic 学习中的过权重，再用 log-survival-mass score 恢复策略优化缺失的生存质量，仅依赖单比特失败终止信号。
+
+**🔎 为什么重要**
+该工作从目标函数层面解释并修复失败终止偏差，在十二个机器人导航和运动任务中同时改善生存与到达表现，为可扩展安全策略学习提供了低标注路径。
+
+[Paper](https://arxiv.org/abs/2608.26571) · [PDF](https://arxiv.org/pdf/2608.26571.pdf)   `arXiv:2608.26571`
+
+### P47 · Barrier Function Conformal Safety Clearance Certification with CVaR for Driving Trajectory Selection
+
+`Autonomous Driving` `Conformal Prediction` `Barrier Function`   **Safety Certification**
+
+**🎯 问题**
+自动驾驶规划器可以比较候选轨迹，却通常不能为最终选中轨迹在闭环中的实际几何安全间距给出统计有效的证书。
+
+**💡 核心思路**
+方法以可微 separating-axis barrier margin 下界有向包围盒间距，在规划时用名义预测或采样下尾 CVaR 评估，并通过跨驾驶会话的 conformal calibration 吸收预测与采样误差。
+
+**🔎 为什么重要**
+它把碰撞几何、尾部风险和分布无关校准连接到轨迹选择后验证，使安全间距不再只是规划器内部评分，而成为可检验的闭环证书。
+
+[Paper](https://arxiv.org/abs/2608.26533) · [PDF](https://arxiv.org/pdf/2608.26533.pdf)   `arXiv:2608.26533`
+
+### P48 · Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving
+
+`Autonomous Driving` `Intent Divergence` `Runtime Gate`   **Pre-commitment Gating**
+
+**🎯 问题**
+车辆交互中的意图误判可能在规划器已经承诺某个机动后才显现，此时仅靠下游走廊约束往往来不及修复决策。
+
+**💡 核心思路**
+语言引导的意图模块读取结构化描述，计算平滑的意图—几何分歧分数，并在机动承诺前执行门控；不确定性被作为 abstention 处理以降低误触发。
+
+**🔎 为什么重要**
+该工作把异常干预点前移到物理交互承诺之前，并通过事故片段重放分析触发提前量与误报，展示了上游语义门控补充几何安全层的价值。
+
+[Paper](https://arxiv.org/abs/2608.26074) · [PDF](https://arxiv.org/pdf/2608.26074.pdf)   `arXiv:2608.26074`
+
 ---
 
 ## 🚧 Open Research Gaps
 
-从目前 43 篇工作的分布可以看到，**攻击安全与模型决策保障已经形成较密集的研究群，而“软硬件运行误差 → 闭环可信退化 → 在线恢复”仍明显不足。** 特别值得继续补充：
+从目前 48 篇工作的分布可以看到，**攻击安全与模型决策保障已经形成较密集的研究群，而“软硬件运行误差 → 闭环可信退化 → 在线恢复”仍明显不足。** 特别值得继续补充：
 
 1. **Hardware fault → embodied behavior propagation**：GPU / NPU soft error、memory bit flip、传感器异常、关节/执行器退化如何跨层传播到最终动作与物理后果。
 2. **Approximate computing under closed loop**：quantization、pruning、cache、early-exit、speculative execution 等优化不应只看离线精度，而应评价长时程误差累积与恢复。

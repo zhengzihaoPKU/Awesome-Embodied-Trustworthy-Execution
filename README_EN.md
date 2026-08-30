@@ -1,5 +1,5 @@
 [简体中文](README.md) · **English**
-![Awesome Embodied Trustworthy Execution banner](assets/banner.svg) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![43 papers](https://img.shields.io/badge/Papers-43-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-29](https://img.shields.io/badge/Updated-2026--08--29-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
+![Awesome Embodied Trustworthy Execution banner](assets/banner.svg) [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) ![48 papers](https://img.shields.io/badge/Papers-48-2563eb?style=flat-square) ![VLA WAM VLN](https://img.shields.io/badge/Embodied_AI-VLA%20%7C%20WAM%20%7C%20VLN-0f766e?style=flat-square) ![Trustworthy Execution](https://img.shields.io/badge/Focus-Trustworthy_Execution-b45309?style=flat-square) ![Updated 2026-08-30](https://img.shields.io/badge/Updated-2026--08--30-64748b?style=flat-square) ![PRs welcome](https://img.shields.io/badge/PRs-Welcome-16a34a?style=flat-square)
 
 **A curated research map for security, reliability, and decision assurance in embodied AI.**
 
@@ -96,6 +96,7 @@ Unlike conventional digital AI, an embodied model operates inside a **perception
 | P40 | [VLAGuard: A Framework for Evaluating and Mitigating Physical Attention Hijacking in Vision-Language-Action Robots within Wireless Sensor Networks](https://arxiv.org/abs/2608.01028) | Attack + defense |
 | P41 | [Hidden in Plain Sight: Diffusion-Based Unrestricted Robotic Attacks on Vision-Language-Action Models](https://arxiv.org/abs/2608.10393)               | Physical attack           |
 | P42 | [Bit-Flip Attacks on Vision-Language-Action Models: Action-Decoding Architecture Shapes the Vulnerability](https://arxiv.org/abs/2608.15475)          | Weight-integrity attack   |
+| P45 | [TrapVLA: Trapping Vision-Language-Action Models in Configured Failure Modes](https://arxiv.org/abs/2608.26578)                                      | Backdoor attack           |
 
 ### II. Software and hardware errors and robustness
 
@@ -126,6 +127,10 @@ Unlike conventional digital AI, an embodied model operates inside a **perception
 | P35 | [Verifiable Foundation Models for Robot Safety](https://arxiv.org/abs/2606.23754)                                                                  | Formal verification        |
 | P36 | [LabGuard: Grounding Natural-Language Laboratory Rules into Runtime Guards for Embodied Laboratory Agents](https://arxiv.org/abs/2606.31045)       | Runtime guard              |
 | P37 | [Pre-VLA: Preemptive Runtime Verification for Reliable Vision-Language-Action and World-Model Rollouts](https://arxiv.org/abs/2605.22446)          | Pre-execution verification |
+| P44 | [FLARE: A Failure-Aware Framework for Autonomous Correction and Recovery in Visual-Language Robotic Manipulation](https://arxiv.org/abs/2608.26645) | Runtime recovery           |
+| P46 | [Arrive and Survive: Scaling Safe Goal-Conditioned Policy Learning from One-Bit Failure Signals](https://arxiv.org/abs/2608.26571)                 | Training-time safe RL      |
+| P47 | [Barrier Function Conformal Safety Clearance Certification with CVaR for Driving Trajectory Selection](https://arxiv.org/abs/2608.26533)          | Safety certification       |
+| P48 | [Gating Before Commitment: Anticipating Intent Divergence to Prevent Post-Interaction Decision Failures in Autonomous Driving](https://arxiv.org/abs/2608.26074) | Pre-commitment gating |
 
 For representative figures and concise notes on each paper's problem, core idea, and significance, see the [Chinese detailed edition](README.md). The paper titles and arXiv links above are language-independent.
 
