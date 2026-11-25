@@ -1,46 +1,46 @@
-# Contributing
+# 🤝 Contributing
 
 Thanks for helping improve **Awesome Embodied Trustworthy Execution**.
 
-## Add a paper
+## Add or update a resource
 
-Please open an Issue or PR and provide:
+Open an Issue or PR with:
 
-1. **Title / arXiv / venue**
-2. **Primary layer**
-   - `I. Malicious Attacks`
-   - `II. Soft / Hardware Errors`
-   - `III. Decision Anomalies`
-   - `Survey / Framework`
-3. **Source of non-trustworthiness** — what makes the embodied loop untrustworthy?
-4. **Intervention stage** — training, pre-execution, generation-time, runtime monitoring, recovery, benchmark, etc.
-5. **Runtime visibility** — action only, observation + action, hidden state, world model, dynamics model, privileged simulator state, etc.
-6. **Three-sentence note**
-   - **Problem**: what failure or gap does the work target?
-   - **Core idea**: what is the main mechanism?
-   - **Why it matters**: what does it change about trustworthy embodied execution?
-7. **Representative figure** — preferably the method overview, key result, or taxonomy figure that best communicates the paper.
+1. **Title, year, venue, and official links** — paper, code, and project page where available.
+2. **Classification** — layer, subsection, and technical direction, supported by the survey discussion.
+3. **Brief notes** — Problem, Core idea, and Why it matters for the detailed CSV.
+4. **Tags** — three short English keywords, such as `VLA | Quantization | Pruning`.
 
-## Figure naming
+## Classification
 
-Use:
+Follow the companion survey's four system layers:
 
-```text
-assets/figures/XX_short-paper-slug.png
+- Model Software
+- Runtime Systems
+- Computing Hardware
+- Physical Execution and Feedback
+
+Use the relevant discussion in the survey, together with Fig. 3, and retain the existing technical directions. A study may appear in several categories but counts as one resource. Keep benchmarks and datasets separate from performance or timing studies.
+
+## Entry format and style
+
+```markdown
+- **Official Acronym**: Full Paper Title. (Year, Venue) [Paper] [Code] [Project]
 ```
 
-Please keep figures readable at GitHub width, crop surrounding paper text when possible, and avoid screenshots containing unrelated pages.
+Use the full title when no official acronym exists. Reuse the current resource badges and sort by year descending, then title alphabetically. Keep descriptions concise, technical, and neutral; detailed notes belong in the CSV. Only include verified official links, and do not label a project-page or placeholder repository as Code.
 
-## Classification rule
+## Keep files consistent
 
-The **primary category is defined by the source of non-trustworthiness**, not by the algorithm name.
+Update both READMEs and the relevant records in `data/papers_detailed.csv` and `data/paper_links_full.csv`. Preserve the CSV columns, existing IDs, anchors, and cross-category mappings. Each resource has one row in each CSV, even when displayed more than once.
 
-Examples:
+Per-paper images are not required. Use authorized figures only; do not add unpublished manuscript PDFs or internal Overleaf sources.
 
-- A *black-box adversarial attack* is still **Malicious Attacks** because an attacker intentionally creates the error.
-- A detector that reads only action outputs is **Decision Assurance / Black-box Monitoring** if it detects naturally occurring policy failures.
-- Quantization or pruning failures belong to **Soft / Hardware Errors & Robustness** when the degradation is introduced by deployment optimization rather than an attacker.
+<details>
+<summary>Legacy ID reference</summary>
 
-## Style
+P01 → P005; P17 → P015; P20 → P019; P27 → P046; P38 → P057; S05 → P064; P37 → P065; P42 → P074; P08 → P092.
 
-Keep descriptions concise, technical, and neutral. Prefer the paper's own terminology and avoid overstating guarantees.
+P09 → P094; P05 → P095; S01 → P102; P07 → P106; P06 → P108; P25 → P119; P26 → P122; P04 → P125; P44 → P134.
+
+</details>

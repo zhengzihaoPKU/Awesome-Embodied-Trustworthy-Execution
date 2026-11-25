@@ -22,28 +22,28 @@
   <circle cx="1400" cy="90" r="260" fill="#2d7dff" opacity="0.07"/>
   <circle cx="180" cy="500" r="280" fill="#ff526d" opacity="0.06"/>
 
-  <text x="90" y="118" fill="#9ec9ff" font-size="24" font-family="Arial,Helvetica,sans-serif" font-weight="700" letter-spacing="3">CURATED RESEARCH MAP</text>
+  <text x="90" y="118" fill="#9ec9ff" font-size="24" font-family="Arial,Helvetica,sans-serif" font-weight="700" letter-spacing="3">A CROSS-LAYER RESEARCH COLLECTION</text>
   <text x="90" y="190" fill="#ffffff" font-size="62" font-family="Arial,Helvetica,sans-serif" font-weight="800">Awesome Embodied</text>
   <text x="90" y="258" fill="url(#glow)" font-size="62" font-family="Arial,Helvetica,sans-serif" font-weight="800">Trustworthy Execution</text>
-  <text x="90" y="310" fill="#c4d2e8" font-size="25" font-family="Arial,Helvetica,sans-serif">Security · Reliability · Decision Assurance for VLA / WAM / Embodied Agents</text>
+  <text x="90" y="310" fill="#c4d2e8" font-size="25" font-family="Arial,Helvetica,sans-serif">Efficiency · Trustworthiness · Cross-Layer Execution for VLA / WAM Systems</text>
 
   <g>
     <rect x="90" y="355" width="360" height="110" rx="22" fill="#161f34" stroke="#ff7181" stroke-opacity="0.65"/>
-    <path d="M135 382 l25 -10 25 10 v22 c0 24 -17 39 -25 44 -8 -5 -25 -20 -25 -44z" fill="none" stroke="#ff7181" stroke-width="5"/>
-    <text x="205" y="399" fill="#ffffff" font-size="24" font-family="Arial,Helvetica,sans-serif" font-weight="700">Adversarial Security</text>
-    <text x="205" y="433" fill="#aebbd1" font-size="18" font-family="Arial,Helvetica,sans-serif">attack · jailbreak · red teaming</text>
+    <circle cx="160" cy="407" r="29" fill="none" stroke="#ff7181" stroke-width="5"/>
+    <path d="M160 386v21l15 9" fill="none" stroke="#ff7181" stroke-width="5" stroke-linecap="round"/>
+    <text x="205" y="399" fill="#ffffff" font-size="24" font-family="Arial,Helvetica,sans-serif" font-weight="700">Efficiency</text>
+    <text x="205" y="433" fill="#aebbd1" font-size="17" font-family="Arial,Helvetica,sans-serif">latency · precision · resources</text>
 
     <rect x="480" y="355" width="360" height="110" rx="22" fill="#161f34" stroke="#f3b45e" stroke-opacity="0.65"/>
     <rect x="523" y="378" width="50" height="50" rx="8" fill="none" stroke="#f3b45e" stroke-width="5"/>
     <path d="M533 368v10M545 368v10M557 368v10M569 368v10M533 428v10M545 428v10M557 428v10M569 428v10M513 388h10M513 400h10M513 412h10M573 388h10M573 400h10M573 412h10" stroke="#f3b45e" stroke-width="4"/>
-    <text x="595" y="399" fill="#ffffff" font-size="24" font-family="Arial,Helvetica,sans-serif" font-weight="700">System Reliability</text>
-    <text x="595" y="433" fill="#aebbd1" font-size="18" font-family="Arial,Helvetica,sans-serif">noise · faults · approximation</text>
+    <text x="595" y="399" fill="#ffffff" font-size="24" font-family="Arial,Helvetica,sans-serif" font-weight="700">Trustworthiness</text>
+    <text x="595" y="433" fill="#aebbd1" font-size="17" font-family="Arial,Helvetica,sans-serif">evidence · checks · recovery</text>
 
     <rect x="870" y="355" width="400" height="110" rx="22" fill="#161f34" stroke="#65b5ff" stroke-opacity="0.65"/>
-    <circle cx="925" cy="403" r="27" fill="none" stroke="#65b5ff" stroke-width="5"/>
-    <path d="M912 403 l9 9 18 -21" fill="none" stroke="#65b5ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <text x="970" y="399" fill="#ffffff" font-size="24" font-family="Arial,Helvetica,sans-serif" font-weight="700">Decision Assurance</text>
-    <text x="970" y="433" fill="#aebbd1" font-size="18" font-family="Arial,Helvetica,sans-serif">monitor · verify · recover</text>
+    <path d="M900 389l25-13 25 13-25 13zM900 403l25 13 25-13M900 418l25 13 25-13" fill="none" stroke="#65b5ff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="970" y="399" fill="#ffffff" font-size="23" font-family="Arial,Helvetica,sans-serif" font-weight="700">Cross-Layer Execution</text>
+    <text x="970" y="433" fill="#aebbd1" font-size="16" font-family="Arial,Helvetica,sans-serif">model · runtime · hardware · body</text>
   </g>
 
   <g transform="translate(1335,315)">
