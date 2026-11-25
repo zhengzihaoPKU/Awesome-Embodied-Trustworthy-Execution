@@ -744,13 +744,11 @@
 <a id="acknowledgements"></a>
 ## 🙏 致谢与贡献者
 
-感谢所有论文作者和开源贡献者。展示形式参考 [Awesome World Models](https://github.com/JoshumeSteiner/Awesome-World-Models)。
+感谢所有论文作者和开源贡献者。
 
 图示来自配套综述 Fig. 1–8。
 
 Paper titles, figures, and technical ideas belong to their respective authors/publishers. Figures in this repository are cropped representative excerpts used for scholarly review and navigation; please follow the original paper/license when reusing them elsewhere. If you are an author and would like a figure replaced or removed, please open an Issue.
-
-*[旧版配图 42](assets/figures/42_bit-flip-attacks-on-vision-language-action-models.png)：Yudong Gao et al., Fig. 1，裁剪自[原论文](https://arxiv.org/abs/2608.15475)，许可为 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。*
 
 [![Contributors](https://contrib.rocks/image?repo=zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution)](https://github.com/zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution/graphs/contributors)
 
