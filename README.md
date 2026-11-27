@@ -2,7 +2,7 @@
 
 # 🤖 Awesome Embodied Trustworthy Execution
 
-![Efficient and trustworthy cross-layer embodied execution](assets/banner.svg)
+![Four-layer embodied execution loop, adapted from the companion survey's Fig. 2](assets/figures/trustworthy-execution-banner.png)
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Stars](https://img.shields.io/github/stars/zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution?style=flat-square&logo=github)](https://github.com/zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution/stargazers) ![Resources](https://img.shields.io/badge/Resources-138-2563EB?style=flat-square) [![License MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-16A34A?style=flat-square)](CONTRIBUTING.md)
 
@@ -54,7 +54,6 @@ A companion academic resource for the survey below, covering **efficient executi
 - [Contributing](#contributing)
 - [Citation](#citation)
 - [Acknowledgements & Contributors](#acknowledgements)
-- [Star History](#star-history)
 
 <details>
 <summary>Expand the complete technical taxonomy</summary>
@@ -140,7 +139,6 @@ A companion academic resource for the survey below, covering **efficient executi
 - [Contributing](#contributing)
 - [Citation](#citation)
 - [Acknowledgements & Contributors](#acknowledgements)
-- [Star History](#star-history)
 
 </details>
 
@@ -746,14 +744,9 @@ Issues and pull requests are welcome for official resources, metadata correction
 
 Thanks to the paper authors and open-source contributors.
 
-Figures reproduce Figs. 1–8 of the companion survey.
+Survey figures reproduce Figs. 1–8 of the companion survey. The header illustration is adapted from Fig. 2.
 
 Paper titles, figures, and technical ideas belong to their respective authors and publishers. Figures in this repository are cropped representative excerpts used for scholarly review and navigation. Follow the original paper's license when reusing them. Authors may open an issue to request replacement or removal of a figure.
 
 
 [![Contributors](https://contrib.rocks/image?repo=zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution)](https://github.com/zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution/graphs/contributors)
-
-<a id="star-history"></a>
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution&type=Date)](https://www.star-history.com/#zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution&Date)

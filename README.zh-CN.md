@@ -2,7 +2,7 @@
 
 # 🤖 Awesome Embodied Trustworthy Execution
 
-![Efficient and trustworthy cross-layer embodied execution](assets/banner.svg)
+![具身智能的四层执行闭环，改编自配套综述图 2](assets/figures/trustworthy-execution-banner.png)
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![Stars](https://img.shields.io/github/stars/zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution?style=flat-square&logo=github)](https://github.com/zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution/stargazers) ![Resources](https://img.shields.io/badge/Resources-138-2563EB?style=flat-square) [![License MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-16A34A?style=flat-square)](CONTRIBUTING.md)
 
@@ -54,7 +54,6 @@
 - [贡献](#contributing)
 - [引用](#citation)
 - [致谢与贡献者](#acknowledgements)
-- [Star History](#star-history)
 
 <details>
 <summary>展开完整三级分类目录</summary>
@@ -140,7 +139,6 @@
 - [贡献](#contributing)
 - [引用](#citation)
 - [致谢与贡献者](#acknowledgements)
-- [Star History](#star-history)
 
 </details>
 
@@ -746,13 +744,8 @@
 
 感谢所有论文作者和开源贡献者。
 
-图示来自配套综述 Fig. 1–8。
+正文图示来自配套综述图 1–8，页首插图改编自图 2。
 
 Paper titles, figures, and technical ideas belong to their respective authors/publishers. Figures in this repository are cropped representative excerpts used for scholarly review and navigation; please follow the original paper/license when reusing them elsewhere. If you are an author and would like a figure replaced or removed, please open an Issue.
 
 [![Contributors](https://contrib.rocks/image?repo=zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution)](https://github.com/zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution/graphs/contributors)
-
-<a id="star-history"></a>
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution&type=Date)](https://www.star-history.com/#zhengzihaoPKU/Awesome-Embodied-Trustworthy-Execution&Date)
