@@ -10,7 +10,7 @@
 
 📄 **配套综述：** *Efficient and Trustworthy Execution of Embodied AI: A Cross-Layer Survey under System-Perspective*.
 
-👥 维护者：[郑子豪](https://github.com/zhengzihaoPKU) · [曹航语](https://github.com/i6bimua) · [毛郅皓](https://github.com/lusunn111)
+👥 维护者：[郑子豪](https://github.com/zhengzihaoPKU) · [曹航语](https://github.com/i6bimua) · [毛郅皓](https://github.com/lusunn111) · [喻冠元](https://github.com/R0sent)
 
 📚 [完整文献表](data/papers_detailed.csv) · [资源链接](data/paper_links_full.csv) · [收录与维护规则](CONTRIBUTING.md)
 
