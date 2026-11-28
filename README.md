@@ -10,7 +10,7 @@ A companion academic resource for the survey below, covering **efficient executi
 
 📄 **Companion survey:** *Efficient and Trustworthy Execution of Embodied AI: A Cross-Layer Survey under System-Perspective*.
 
-👥 Maintainers: [Zihao Zheng](https://github.com/zhengzihaoPKU) · [Hangyu Cao](https://github.com/i6bimua) · [Zhihao Mao](https://github.com/lusunn111) · [Hui Huang](https://github.com/huih99061-source) · [Guanyuan Yu](https://github.com/R0sent)
+👥 Maintainers: [Zihao Zheng](https://github.com/zhengzihaoPKU) · [Hangyu Cao](https://github.com/i6bimua) · [Zhihao Mao](https://github.com/lusunn111) · [Xichang Wu](https://github.com/wuxichang) · [Hui Huang](https://github.com/huih99061-source) · [Guanyuan Yu](https://github.com/R0sent)
 
 📚 [Detailed catalog](data/papers_detailed.csv) · [Resource links](data/paper_links_full.csv) · [Curation guidelines](CONTRIBUTING.md)
 
